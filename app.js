@@ -37,6 +37,7 @@ calculate.addEventListener('click', (e) => {
         for(let i = 0; i < 10; i++) {
             document.querySelector(`#${amount[i]}`).textContent = cashback[i];
         }
+        document.querySelector('#giveback').textContent = cashAmount - billAmount;
     }
 
     e.preventDefault();
